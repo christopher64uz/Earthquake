@@ -1,0 +1,42 @@
+<!--
+Test Code by Christopher
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      input {
+          margin-top: 15px;
+      }
+      #map {
+        height: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">        
+    <input type="text"  class="col-md-3" id="mapinput" placeholder="Enter City Name ..">
+     <div class="col-md-9" id="map" style="width: 900px;"></div>
+     <div class="col-md-3">
+       <h2>Earthquake List (USA)</h2>
+      <!-- Display Ten Earthquakes in USA</button> -->
+       <div class="list"></div>
+     </div>
+  </div>
+    <!-- Private API Key for Google Map JavaScript API -->   
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDy4C--MmRyPV-MRdli7deMnqmIiliWyY&libraries=places"></script>
+    <script type="text/javascript" src="map.js"></script> 
+
+  </body>
+</html>
